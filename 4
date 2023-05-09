@@ -1,0 +1,34 @@
+a = int(input("Enter dividend: "))
+b = int(input("Enter divider: "))
+res = 0
+if b == 0:
+    print("Cannot be divided by zero")
+elif abs(a) < abs(b):
+    print("Enter numbers such that modulus of the dividend is greater than modulus of the divider")
+else:
+    if b > 0:
+        if a > b:
+            while a >= b:
+                res += 1
+                a -= b
+            print("The quotient  = ", res)
+            print("The remainder of dividing = ", a)
+        else:
+            while abs(a) >= abs(b):
+                res -= 1
+                a += b
+            print("The quotient  = ", res)
+            print("The remainder of dividing = ", a)
+    else:
+        if a > b:
+            while a >= b:
+                res += 1
+                a -= b
+            print("The quotient  = ", res)
+            print("The remainder of dividing = ", a)
+        else:
+            while abs(a) >= abs(b):
+                res += 1
+                a -= b
+            print("The quotient  = ", res)
+            print("The remainder of dividing = ", a)
