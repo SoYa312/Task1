@@ -1,0 +1,15 @@
+N = int(input("Enter the number of iterations (N): "))
+n = int(input("Enter the starting element (n): "))
+s = 0   # series sum
+m = 0   # iteration counter
+print("We start with element", n)
+for x in range(n, N+1):
+    f = 1   # factorial
+    for i in range(2, n+1):
+        f *= i
+    x = ((3 ** n) * f) / (n ** n)
+    m += 1
+    n += 1
+    s += x
+    print("The number of iterations", m)
+    print("The sum of the series is", s)
